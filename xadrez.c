@@ -51,5 +51,14 @@ int main() {
         printf("Esquerda: Rainha na coluna %d\n", rainha_coluna);
         rainha_coluna--; // mover para a coluna (coluna -1)
     }
+//movimento do cavalo 2 casas para baixo e 1 para a esquerda
+    int movimentoCompleto = 2; // número de movimentos completos
+    while (movimentoCompleto--) {
+        for(int i = 0; i < 2; i++) { // mover 2 casas para baixo
+            printf("Baixo: Cavalo na linha %d\n", i + 1); // exemplo de linha
+        }
+        printf("Esquerda: Cavalo na coluna %d\n", 2); // exemplo de coluna (B)
+        break; // interrompe o loop após um movimento completo
+    }
     return 0;
 }
